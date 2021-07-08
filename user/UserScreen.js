@@ -12,15 +12,15 @@ const token=useSelector(state=>state.login.loginCheck)
 
 const dispatch = useDispatch()
 
-    const loginFunc=(e)=>{
-     //   e.preventDefault();
+    const loginFunc=()=>{
+    
         dispatch(login(username,password))
-        if(token == 1234){
+        setUsername('')
+        if(token){
             props.navigation.navigate('Categories')
         }else{
             setError("Wrong credentials")
         }
-        setUsername('')
     }
 
     const RegisterFunc=()=>{
@@ -38,7 +38,7 @@ const dispatch = useDispatch()
             value={username}/>
             <TextInput style={styles.number} 
             placeholder="password"  
-            onChangeText={(event)=>{SetPassword(event.target.value)}}
+            onChangeText={password=>{SetPassword(password)}}
             value={password}/>
             <View style={styles.buttonContainer}>
                 <View>

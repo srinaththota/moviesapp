@@ -9,6 +9,8 @@ import Horror from '../assets/horror.jpg'
 import Jessica from '../assets/jessica-alba.jpg'
 import Annabelle from '../assets/annabelle.jpg'
 import Titanic from '../assets/titanic.jpg'
+import MrBean from '../assets/mrbean.jpg'
+import Mia from '../assets/mia.jpg'
 /*const data=[{
     id:1,
     name:'Nappi',
@@ -36,11 +38,12 @@ const data=[
 export const StarData=[
     new Star('1',['c1','c4'],'The Ring',Horror,'https://video7258.s3.ap-south-1.amazonaws.com/theRing.mp4'),
     new Star('2',['c1','c4'],'Ragini MMS 2',Leone,'https://video7258.s3.ap-south-1.amazonaws.com/raginimms.mp4'),
-    new Star('5',['c1','c5'],'The Eye',Jessica,'https://www.youtube.com/watch?v=c3j_Mo51Lwc'),
+    new Star('5',['c1','c5'],'The Eye',Jessica,'https://video7258.s3.ap-south-1.amazonaws.com/theEye.mp4'),
     new Star('6',['c2','c4'],'Titanic',Titanic,'https://video7258.s3.ap-south-1.amazonaws.com/titanic.mp4'),
-    new Star('7',['c2','c7'],'Daniels',Daniels,'https://www.youtube.com/watch?v=c3j_Mo51Lwc'),
-    new Star('8',['c2','c4'],'Brani',Brandi,'https://www.youtube.com/watch?v=c3j_Mo51Lwc'),
-    new Star('9',['c3'],'Mr.Bean',Kacey,'https://www.youtube.com/watch?v=c3j_Mo51Lwc'),
+    new Star('7',['c2','c7'],'Avengers',Jessica,'https://video7258.s3.ap-south-1.amazonaws.com/avengers.mp4'),
+    new Star('8',['c3','c4'],'Mr.Bean',MrBean,'https://video7258.s3.ap-south-1.amazonaws.com/mrbean.mp4'),
+    new Star('9',['c8'],'Climax',Mia,'https://video7258.s3.ap-south-1.amazonaws.com/climax.mp4'),
     new Star('10',['c1'],'Annabelle',Annabelle,'https://video7258.s3.ap-south-1.amazonaws.com/theRing.mp4'),
+    
 ]
 export default data;

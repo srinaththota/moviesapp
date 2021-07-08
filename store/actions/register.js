@@ -1,8 +1,13 @@
 const register=(username,password,confirmPassword)=>{
-    console.log(username,password)
+    console.log(username,password,confirmPassword)
+    
+
+
+
     return dispatch=>{
-    /*    console.log("here")
-        fetch('http://192.168.1.6:3000/login',{
+/*
+        console.log("here")
+        fetch('http://192.168.1.6:3000/register',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
@@ -34,14 +39,19 @@ const register=(username,password,confirmPassword)=>{
                 payload:1234 //considersing we received payload
             })
         })
-      */
+      
      if(username=="123456789"){
         dispatch({
             type:'LOGIN',
             payload:1234 //considersing we received payload
         })
     }
+    */
+    dispatch({
+        type:'LOGIN',
+        payload:1234 //considersing we received payload
+    })
     }
 }
-      
+
 export default register;

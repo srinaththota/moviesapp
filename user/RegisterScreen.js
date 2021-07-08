@@ -1,17 +1,18 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { View, TextInput, Button, Text, StyleSheet } from 'react-native'
-const RegisterScreen=()=>{
+import register from '../store/actions/register'
+const RegisterScreen=(props)=>{
     const [username,setUsername]=useState('')
     const [password,SetPassword]=useState('')
     const [confirmPassword,SetConfirmPassword]=useState('')
+    const token=useSelector(state=>state.login.loginCheck)
     const dispatch = useDispatch()
     const RegisterFunc=()=>{
         dispatch(register(username,password,confirmPassword))
-        if(token == 1234){
-            props.navigation.navigate('Login')
-        }
+        props.navigation.navigate('Login')
     }
+  
     return(
         <View style={styles.container}>
             <View style={styles.inputContainer}>

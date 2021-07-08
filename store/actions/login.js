@@ -1,7 +1,9 @@
 const login=(username,password)=>{
     console.log(username,password)
+    
     return dispatch=>{
-    /*    console.log("here")
+    /*
+        console.log("here")
         fetch('http://192.168.1.6:3000/login',{
             method:'POST',
             headers:{
@@ -35,13 +37,20 @@ const login=(username,password)=>{
             })
         })
       */
+        dispatch({
+            type:'LOGIN',
+            payload:1234 //considersing we received payload
+        })
+        /*
      if(username=="123456789"){
         dispatch({
             type:'LOGIN',
             payload:1234 //considersing we received payload
         })
     }
+    */
+    
     }
 }
-      
+    
 export default login;
